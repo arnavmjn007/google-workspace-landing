@@ -51,18 +51,18 @@ export default function HeroSection() {
     return (
         <section className="relative flex min-h-screen w-full flex-col items-center overflow-hidden bg-white pb-10 pt-10">
             <div
-                className="pointer-events-none absolute inset-y-0 left-0 w-[900px]"
+                className="hidden md:block pointer-events-none absolute inset-y-0 left-0 w-[900px]"
                 style={{
-                    background: 'radial-gradient(ellipse 200px 50% at -10% 50%, rgba(33, 123, 254, 0.3) 30%, rgba(7, 142, 251, 0.3) 30%, rgba(172, 135, 235, 0.3) 30%, rgba(238, 77, 93, 0.3) 30%, transparent 100%)', filter: 'blur(3px)'
+                    background: 'radial-gradient(ellipse 200px 50% at -8% 40%, rgba(33, 123, 254, 0.3) 30%, rgba(7, 142, 251, 0.3) 30%, rgba(172, 135, 235, 0.3) 30%, rgba(238, 77, 93, 0.3) 30%, transparent 100%)', filter: 'blur(3px)'
                 }}
             />
             <div
-                className="pointer-events-none absolute inset-y-0 right-0 w-[800px]"
+                className="hidden md:block pointer-events-none absolute inset-y-0 right-0 w-[800px]"
                 style={{
-                    background: 'radial-gradient( ellipse 200px 50% at 110% 50%,rgba(33, 123, 254, 0.4) 100%, rgba(7, 142, 251, 0.4) 10%, rgba(172, 135, 235, 0.4) 10%, rgba(238, 77, 93, 0.4) 10%, transparent)', filter: 'blur(50px)'
+                    background: 'radial-gradient( ellipse 200px 50% at 115% 40%,rgba(33, 123, 254, 0.4) 100%, rgba(7, 142, 251, 0.4) 10%, rgba(172, 135, 235, 0.4) 10%, rgba(238, 77, 93, 0.4) 10%, transparent)', filter: 'blur(50px)'
                 }}
             />
-            <div className="container relative z-10 mx-auto max-w-6xl px-6 pt-32 text-center">
+            <div className="container relative z-10 mx-auto max-w-6xl px-6 pt-10 text-center">
                 <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
                     <span
                         className="bg-clip-text text-transparent"
@@ -131,8 +131,32 @@ export default function HeroSection() {
                             <polyline points="7 7 17 7 17 17"></polyline>
                         </svg>
                     </button>
-                    </div>
                 </div>
+                <br />
+                <div className="mx-auto max-w-4xl px-4 mt-10">
+                    <div className="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden shadow-xl">
+                        <Image
+                            src="/video.jpg"
+                            alt="Video thumbnail"
+                            fill
+                            className="object-cover"
+                        />
+                        <button className="absolute inset-0 flex items-center justify-center group">
+                            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/90 flex items-center justify-center group-hover:bg-white transition shadow-lg">
+                                <svg className="w-10 h-10 md:w-12 md:h-12 text-gray-700 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+
+                    <p className="mt-6 text-sm md:text-medium text-black">
+                        Get A Free 15 Min Demo - See if it fits your business
+                    </p>
+                </div>
+            </div>
         </section>
     );
 }
+
+
