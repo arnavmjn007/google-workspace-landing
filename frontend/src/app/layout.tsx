@@ -1,4 +1,5 @@
 import { Inter, Mukta } from "next/font/google";
+import { magnolia } from "./fonts";
 import "./globals.css";
 
 
@@ -11,6 +12,7 @@ const mukti = Mukta({
   weight: ["400", "500", "700"],
   variable: "--font-mukta",
 });
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${mukti.variable} antialiased`}
+        className={`${inter.variable} ${mukti.variable} ${magnolia.variable}`}
       >
         {children}
       </body>
