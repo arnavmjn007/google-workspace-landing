@@ -1,5 +1,4 @@
 import Image from "next/image";
-import SolutionsSection from "./Solutions";
 
 export default function Features() {
     const googleApps = [
