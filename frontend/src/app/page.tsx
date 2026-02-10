@@ -1,13 +1,17 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import TrustedBy from "@/components/TrustedBy";
+import Features from "@/components/Features";
+import SolutionsSection from "@/components/Solutions";
 
 export default function Home() {
   return (
-    <main className="border-4 border-blue-500 min-h-screen">
+    <main className="min-h-screen">
       <Navbar />
       <HeroSection />
       <TrustedBy />
+      <Features />
+      <SolutionsSection />
     </main>
   );
 }

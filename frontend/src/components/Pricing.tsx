@@ -100,7 +100,6 @@ export default function PricingSection() {
                                 </span>
                             </button>
                         </div>
-
                         <div className="grid grid-cols-2 gap-x-16 gap-y-10 border-l-2 border-gray-200 pl-8">
                             <div>
                                 <h4 className="font-bold text-black mb-4 text-base">Storage</h4>
